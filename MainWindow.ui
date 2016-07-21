@@ -1,0 +1,840 @@
+<ui version="4.0" >
+ <author>Roland N. Fru</author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="enabled" >
+   <bool>true</bool>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>260</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy>
+    <hsizetype>0</hsizetype>
+    <vsizetype>0</vsizetype>
+    <horstretch>44</horstretch>
+    <verstretch>200</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>260</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>260</width>
+    <height>390</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>YakaPhone</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="../resource/icons" >:/application/logoicon16x16.png</iconset>
+  </property>
+  <property name="iconSize" >
+   <size>
+    <width>16</width>
+    <height>16</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle" >
+   <enum>Qt::ToolButtonTextBesideIcon</enum>
+  </property>
+  <widget class="QFrame" name="centralwidget" >
+   <property name="minimumSize" >
+    <size>
+     <width>260</width>
+     <height>380</height>
+    </size>
+   </property>
+   <property name="baseSize" >
+    <size>
+     <width>260</width>
+     <height>380</height>
+    </size>
+   </property>
+   <widget class="QFrame" name="frame_Dialpad" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>118</width>
+      <height>148</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton_Number_4" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>36</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/4_a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Number_5" >
+     <property name="geometry" >
+      <rect>
+       <x>40</x>
+       <y>36</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/5_a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Number_7" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>72</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/7_a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Number_8" >
+     <property name="geometry" >
+      <rect>
+       <x>40</x>
+       <y>72</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/8_a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Number_0" >
+     <property name="geometry" >
+      <rect>
+       <x>40</x>
+       <y>108</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/0_a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Number_Pound" >
+     <property name="geometry" >
+      <rect>
+       <x>80</x>
+       <y>108</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/raute_a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Number_2" >
+     <property name="geometry" >
+      <rect>
+       <x>40</x>
+       <y>0</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/2_a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Number_1" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/1_a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="autoRepeat" >
+      <bool>false</bool>
+     </property>
+     <property name="flat" >
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Number_3" >
+     <property name="geometry" >
+      <rect>
+       <x>80</x>
+       <y>0</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/3_a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Number_6" >
+     <property name="geometry" >
+      <rect>
+       <x>80</x>
+       <y>36</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/6_a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Number_9" >
+     <property name="geometry" >
+      <rect>
+       <x>80</x>
+       <y>72</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/9_a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Number_Star" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>108</y>
+       <width>32</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/numberPad/__a.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Settings" >
+    <property name="geometry" >
+     <rect>
+      <x>150</x>
+      <y>354</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string/>
+    </property>
+    <property name="icon" >
+     <iconset resource="../resource/icons" >:/controlPad/Settings_a.png</iconset>
+    </property>
+    <property name="iconSize" >
+     <size>
+      <width>100</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Yakaphone" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>6</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font" >
+     <font>
+      <family>MS Shell Dlg</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="text" >
+     <string>      YakaPhone</string>
+    </property>
+    <property name="alignment" >
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_Mocrophone" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>206</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="layoutDirection" >
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="value" >
+     <number>50</number>
+    </property>
+    <property name="textVisible" >
+     <bool>true</bool>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_MicrophoneLabel_2" >
+    <property name="geometry" >
+     <rect>
+      <x>134</x>
+      <y>210</y>
+      <width>14</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string/>
+    </property>
+    <property name="pixmap" >
+     <pixmap resource="../resource/icons" >:/application/loudpeaker.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_Loudspeaker" >
+    <property name="geometry" >
+     <rect>
+      <x>150</x>
+      <y>206</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="value" >
+     <number>50</number>
+    </property>
+    <property name="textVisible" >
+     <bool>true</bool>
+    </property>
+    <property name="orientation" >
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_MicrophoneLabel" >
+    <property name="geometry" >
+     <rect>
+      <x>110</x>
+      <y>210</y>
+      <width>14</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string/>
+    </property>
+    <property name="pixmap" >
+     <pixmap resource="../resource/icons" >:/application/microphone.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Minimize" >
+    <property name="geometry" >
+     <rect>
+      <x>216</x>
+      <y>8</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="toolTip" >
+     <string>minimize</string>
+    </property>
+    <property name="whatsThis" >
+     <string/>
+    </property>
+    <property name="text" >
+     <string/>
+    </property>
+    <property name="icon" >
+     <iconset resource="../resource/icons" >:/application/WindowMinimize.png</iconset>
+    </property>
+    <property name="iconSize" >
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_DialAnsDrop" >
+    <property name="enabled" >
+     <bool>false</bool>
+    </property>
+    <property name="geometry" >
+     <rect>
+      <x>150</x>
+      <y>230</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string/>
+    </property>
+    <property name="icon" >
+     <iconset resource="../resource/icons" >:/controlPad/Dial_a.png</iconset>
+    </property>
+    <property name="iconSize" >
+     <size>
+      <width>100</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_HoldResume" >
+    <property name="enabled" >
+     <bool>false</bool>
+    </property>
+    <property name="geometry" >
+     <rect>
+      <x>150</x>
+      <y>266</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string/>
+    </property>
+    <property name="icon" >
+     <iconset resource="../resource/icons" >:/controlPad/Hold_a.png</iconset>
+    </property>
+    <property name="iconSize" >
+     <size>
+      <width>100</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Credit" >
+    <property name="enabled" >
+     <bool>false</bool>
+    </property>
+    <property name="geometry" >
+     <rect>
+      <x>150</x>
+      <y>302</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string/>
+    </property>
+    <property name="icon" >
+     <iconset resource="../resource/icons" >:/controlPad/Credit_a.png</iconset>
+    </property>
+    <property name="iconSize" >
+     <size>
+      <width>100</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Close" >
+    <property name="geometry" >
+     <rect>
+      <x>234</x>
+      <y>8</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="toolTip" >
+     <string>exit</string>
+    </property>
+    <property name="whatsThis" >
+     <string/>
+    </property>
+    <property name="text" >
+     <string/>
+    </property>
+    <property name="icon" >
+     <iconset resource="../resource/icons" >:/application/WindowClose.png</iconset>
+    </property>
+    <property name="iconSize" >
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_Display" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>241</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string/>
+    </property>
+    <widget class="QLabel" name="label" >
+     <property name="geometry" >
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>49</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="pixmap" >
+      <pixmap resource="../resource/icons" >:/application/logo.png</pixmap>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>125</y>
+       <width>221</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>181</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_StatusCaption" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>40</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <family>MS Shell Dlg</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="text" >
+      <string>State:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_StatusText" >
+     <property name="geometry" >
+      <rect>
+       <x>52</x>
+       <y>9</y>
+       <width>140</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <family>MS Shell Dlg</family>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Unknown</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_CallRecord_Backward" >
+     <property name="geometry" >
+      <rect>
+       <x>167</x>
+       <y>138</y>
+       <width>30</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/application/callRecordBackward.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_CallRecord_Forward" >
+     <property name="geometry" >
+      <rect>
+       <x>201</x>
+       <y>138</y>
+       <width>30</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset resource="../resource/icons" >:/application/callRecordFoward.png</iconset>
+     </property>
+     <property name="iconSize" >
+      <size>
+       <width>30</width>
+       <height>15</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_TelNumber" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>221</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <family>Elephant</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="autoFillBackground" >
+      <bool>false</bool>
+     </property>
+     <property name="text" >
+      <string>Tel. Nr.</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_TimerCaption" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>141</y>
+       <width>47</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <family>MS Shell Dlg</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Timer:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_TimerText" >
+     <property name="geometry" >
+      <rect>
+       <x>50</x>
+       <y>140</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <family>MS Shell Dlg</family>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="text" >
+      <string>00:00:00</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <resources>
+  <include location="../resource/icons" />
+ </resources>
+ <connections/>
+</ui>

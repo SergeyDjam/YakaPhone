@@ -1,0 +1,474 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>SettingsDialog</class>
+ <widget class="QDialog" name="SettingsDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>408</width>
+    <height>171</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Settings Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>320</x>
+     <y>20</y>
+     <width>77</width>
+     <height>106</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" >
+    <property name="margin" >
+     <number>0</number>
+    </property>
+    <property name="spacing" >
+     <number>6</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="okButton" >
+      <property name="text" >
+       <string>OK</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelButton" >
+      <property name="text" >
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer>
+      <property name="orientation" >
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" >
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTabWidget" name="tabAbout" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>301</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="tab_Register" >
+    <attribute name="title" >
+     <string>Register</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit_Username" >
+     <property name="geometry" >
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Password" >
+     <property name="geometry" >
+      <rect>
+       <x>100</x>
+       <y>40</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="echoMode" >
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_ServerName" >
+     <property name="geometry" >
+      <rect>
+       <x>100</x>
+       <y>70</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>62.75.184.220</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Username" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>14</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>UserName:</string>
+     </property>
+     <property name="buddy" >
+      <cstring>lineEdit_Username</cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Password" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>44</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Password:</string>
+     </property>
+     <property name="buddy" >
+      <cstring>lineEdit_Password</cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_ServerName" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>74</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Server Name:</string>
+     </property>
+     <property name="buddy" >
+      <cstring>lineEdit_ServerName</cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_GetAccount" >
+     <property name="geometry" >
+      <rect>
+       <x>6</x>
+       <y>100</y>
+       <width>271</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>No account yet? Get one at &lt;a href="http://www.yakacall.com">http://www.yakacall.com&lt;/a> !</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Audio" >
+    <attribute name="title" >
+     <string>Audio</string>
+    </attribute>
+    <widget class="QComboBox" name="comboBox_AudioOutput" >
+     <property name="geometry" >
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>211</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_AudioInput" >
+     <property name="geometry" >
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>211</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_RingBuzzer" >
+     <property name="geometry" >
+      <rect>
+       <x>170</x>
+       <y>100</y>
+       <width>111</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Ring with Buzzer</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_AudioRing" >
+     <property name="geometry" >
+      <rect>
+       <x>60</x>
+       <y>70</y>
+       <width>211</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_AudioOutput" >
+     <property name="geometry" >
+      <rect>
+       <x>20</x>
+       <y>18</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Output:</string>
+     </property>
+     <property name="buddy" >
+      <cstring>comboBox_AudioOutput</cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_AudioInput" >
+     <property name="geometry" >
+      <rect>
+       <x>20</x>
+       <y>48</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Input:</string>
+     </property>
+     <property name="buddy" >
+      <cstring>comboBox_AudioInput</cstring>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_AudioRing" >
+     <property name="geometry" >
+      <rect>
+       <x>20</x>
+       <y>78</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Ring:</string>
+     </property>
+     <property name="buddy" >
+      <cstring>comboBox_AudioInput</cstring>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Codec" >
+    <attribute name="title" >
+     <string>Codec</string>
+    </attribute>
+    <widget class="QRadioButton" name="radioButton_CodecALaw" >
+     <property name="geometry" >
+      <rect>
+       <x>110</x>
+       <y>30</y>
+       <width>61</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>alaw</string>
+     </property>
+     <property name="checked" >
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_CodecULaw" >
+     <property name="geometry" >
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>61</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>ulaw</string>
+     </property>
+     <property name="checked" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_CodecILBC" >
+     <property name="geometry" >
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>61</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>ilbc</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_CodecSpeex" >
+     <property name="geometry" >
+      <rect>
+       <x>110</x>
+       <y>80</y>
+       <width>61</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>speex</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_CodecG723_1" >
+     <property name="enabled" >
+      <bool>false</bool>
+     </property>
+     <property name="geometry" >
+      <rect>
+       <x>190</x>
+       <y>80</y>
+       <width>61</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>G723.1</string>
+     </property>
+     <property name="checkable" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_CodecGSM" >
+     <property name="geometry" >
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>61</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>gsm</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Filter" >
+    <attribute name="title" >
+     <string>Filter</string>
+    </attribute>
+    <widget class="QCheckBox" name="checkBox_AutomaticGainControl" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>131</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Automatic Gain Control</string>
+     </property>
+     <property name="checked" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_NoiseRecuction" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>111</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Noise Reduction</string>
+     </property>
+     <property name="checked" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_AnalogAutomaticGainControl" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>121</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Analog Gain Control</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_EchoCancellation" >
+     <property name="geometry" >
+      <rect>
+       <x>150</x>
+       <y>50</y>
+       <width>111</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Echo Cancellation</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_ComfortNoise" >
+     <property name="geometry" >
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>111</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Comfort Noise</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_SilenceSuppression" >
+     <property name="geometry" >
+      <rect>
+       <x>150</x>
+       <y>80</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Silence Suppression</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_About" >
+    <attribute name="title" >
+     <string>About</string>
+    </attribute>
+    <widget class="QTextEdit" name="textEdit" >
+     <property name="geometry" >
+      <rect>
+       <x>-1</x>
+       <y>-1</y>
+       <width>301</width>
+       <height>131</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <resources/>
+ <connections/>
+</ui>
