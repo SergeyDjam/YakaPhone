@@ -18,7 +18,7 @@ HEADERS += account.h \
            settingsdialog.h \
            ui_mainwindow.h \
            ui_settingsdialog.h \
-           yakacallstyle.h
+ #          yakacallstyle.h
 FORMS += MainWindow.ui SettingsDialog.ui
 SOURCES += account.cpp \
            callrecord.cpp \
@@ -29,4 +29,6 @@ SOURCES += account.cpp \
            prefs.cpp \
            qrc_icons.cpp \
            settingsdialog.cpp \
-           yakacallstyle.cpp
+#           yakacallstyle.cpp
+
+LIBS += -liaxclient
