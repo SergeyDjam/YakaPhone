@@ -10,6 +10,7 @@ INCLUDEPATH += .
 # Input
 HEADERS += account.h \
            callrecord.h \
+           iaxclient.h \
            iaxwrapper.h \
            iaxwrapperevent.h \
            mainwindow.h \
