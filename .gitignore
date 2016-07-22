@@ -1,0 +1,22 @@
+# build directories.
+
+# Waf files/folders
+
+# Binary.
+*.out
+*.so
+*.o
+*.la
+
+# AStyle orig files.
+
+# Ghostwriter (Markdown editor) backup files
+
+# gdb logs.
+
+# this is a vala project.
+
+# Glade stupid temp files.
+
+#qtcretor temp
+*.pro.user
